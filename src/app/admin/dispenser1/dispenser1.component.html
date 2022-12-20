@@ -1,0 +1,31 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>Dispenser 1</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="uk-flex">
+            <span class="uk-width-expand"></span>
+            <button mat-flat-button color="primary" (click)="dispenserDetail({},-1)">Tambah Data</button>
+        </div>
+        
+        <table class="uk-table uk-table-middle uk-table-divider">
+            <thead>                
+                <th>Id</th>
+                <th>Date</th>
+                <!--author diganti waterheight-->
+                <th>Water Height</th>
+                
+                <th align="right">#</th>
+            </thead>
+            <tbody>
+                <tr *ngFor="let dispenser1 of dispenser1s.data; let idx=index">
+                    <td>{{dispenser1.id}}</td>
+                    <!--title diganti date-->
+                    <td>{{dispenser1.attributes.date}}</td>
+                    <!--author diganti water height-->
+                    <td>{{dispenser1.attributes.water_height}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+ </mat-card>

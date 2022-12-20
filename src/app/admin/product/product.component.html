@@ -1,0 +1,39 @@
+<mat-card>
+    <mat-card-header>
+        <mat-card-title>{{title}}</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <div class="uk-flex">
+            <span class="uk-width-expand"></span>
+            <button mat-flat-button color="primary">Tambah Produk</button>
+        </div>
+        <table class="uk-table uk-table-middle uk-table-divider">
+            <thead>                
+                <th>No</th>
+                <!--title diganti date-->
+                <th>Date</th>
+                <th>Penulis</th>
+                <th>Penerbit</th>
+                <th>Tahun Terbit</th>
+                <th>ISBN</th>
+                <th>Harga</th>
+                <th align="right">#</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <!--title diganti date-->
+                    <td>{{dispenser.date}}</td>
+                    <td>{{dispenser.author}}</td>
+                    <td>{{dispenser.publisher}}</td>
+                    <td>{{dispenser.year}}</td>
+                    <td>{{dispenser.price}}</td>
+                    <td align="right">
+                        <button mat-button color="primary" >Edit</button>
+                        <button mat-button color="warn">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </mat-card-content>
+ </mat-card>
