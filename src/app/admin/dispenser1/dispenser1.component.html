@@ -24,6 +24,10 @@
                     <td>{{dispenser1.attributes.date}}</td>
                     <!--author diganti water height-->
                     <td>{{dispenser1.attributes.water_height}}</td>
+                    
+                    <td align="right">
+                    <button mat-button color="warn" (click)="deleteDispenser1(idx)">Delete</button>    
+                    </td>
                 </tr>
             </tbody>
         </table>
